@@ -4,6 +4,7 @@ description: Better Home Page, Better Workflow
 thumbnail: /blog-resources/files2-4-30/HeroImage.jpg
 date: 2/7/2023
 author: files-community
+tags: [announcements]
 ---
 
 We are thrilled to announce the latest update to Files. With version 2.4.30, we've made several new improvements that will enhance your overall experience so be sure to update and see for yourself!

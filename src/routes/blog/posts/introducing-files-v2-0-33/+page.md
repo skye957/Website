@@ -4,6 +4,7 @@ description: Today, we're pleased to announce that Files v2.0.33 is now availabl
 thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
 date: 2021-11-04
 author: yaira2
+tags: [announcements]
 ---
 
 Today, we're pleased to announce

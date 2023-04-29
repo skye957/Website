@@ -4,6 +4,7 @@ description: Today, we're pleased to announce that Files v2.1 is now available. 
 thumbnail: /blog-resources/filesv2-1/HeroImage.jpg
 date: 2022-1-11
 author: yaira2
+tags: [announcements]
 ---
 
 Today, we're pleased to announce

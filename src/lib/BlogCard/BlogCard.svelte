@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { date as dateFormat, format } from "svelte-i18n";
+	import { date as dateFormat } from "svelte-i18n";
 	import { externalLink } from "$lib";
+	import { InfoBadge } from "fluent-svelte";
 
 	export let slug = "";
 	export let date = "";
@@ -8,12 +9,22 @@
 	export let title = "";
 	export let description = "";
 	export let thumbnail = "";
+	export let tags: string[] = [];
 </script>
 
 <a class="blog-card" href="/blog/posts/{slug}" {...$$restProps}>
 	<img alt="{title} thumbnail" class="thumbnail" src={thumbnail} />
 	<div class="body">
 		<h5>{title}</h5>
+		{#if tags.length > 0}
+			<ul class="blog-card-tag-list">
+				{#each tags as tag}
+					<li class="blog-card-tag">
+						<InfoBadge>{tag}</InfoBadge>
+					</li>
+				{/each}
+			</ul>
+		{/if}
 		<span>{description}</span>
 	</div>
 	<footer>

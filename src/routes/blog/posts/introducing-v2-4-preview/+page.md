@@ -4,6 +4,7 @@ description: We're excited to give you the first look at what we're working on f
 thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.jpg
 date: 2022-11-15
 author: files-community
+tags: [announcements, preview]
 ---
 
 A couple of months ago, we announced our plans for the next generation of Files and we wanted to take this opportunity to share our progress on the transition from UWP to WinAppSdk. We're already seeing the benefits of this transition with faster build times, easier access to APIs and improved performance when navigating between directories. These noticeable improvements are just the start, there a lot additional ways for us to optimize and improve performance. Over the coming months, you can expect us to work on improving startup time and to reduce the amount of system resources being used when the app is open.

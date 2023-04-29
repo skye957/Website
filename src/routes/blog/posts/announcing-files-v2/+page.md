@@ -4,6 +4,7 @@ description: Today, we're excited to announce that we are releasing Files v2 as 
 thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
 date: 2021-10-04
 author: yaira2
+tags: [announcements]
 ---
 
 Today, we're excited to announce that we are releasing Files v2 as

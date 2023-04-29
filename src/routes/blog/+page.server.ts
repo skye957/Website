@@ -8,6 +8,7 @@ export type Post = {
 		author: string;
 		thumbnail: string;
 		date: string;
+		tags?: string[];
 	};
 };
 

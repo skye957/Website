@@ -4,6 +4,7 @@ description: Unlock the full potential of Files
 thumbnail: /blog-resources/ten-things/HeroImage.jpg
 date: 1/25/2023
 author: files-community
+tags: [tips, features]
 ---
 
 Files is a powerful and user-friendly file manager that can help you organize and manage your files with ease. However, there may be some features and capabilities that you may not know about. In this post, we will highlight the top 10 things you may not know about Files.

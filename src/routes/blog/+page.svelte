@@ -7,13 +7,27 @@
 		PageSection,
 		tilt,
 	} from "$lib";
-	import { Button } from "fluent-svelte";
+	import { Button, ComboBox } from "fluent-svelte";
 	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
 	$: ({ posts } = data);
 	$: mainPost = posts[0];
+
+	let tagFilter: string;
+
+	$: allTags = [
+		...new Set(
+			posts
+				.flatMap(post => post.metadata.tags)
+				.filter((p): p is string => Boolean(p))
+		),
+	];
+
+	$: filteredPosts = posts
+		.slice(1)
+		.filter(p => (tagFilter ? p.metadata.tags?.includes(tagFilter) : true));
 
 	let scrollY: number;
 </script>
@@ -56,8 +70,14 @@
 		</div>
 	</div>
 	{#if posts.slice(1).length > 0}
+		<ComboBox
+			placeholder={$_("blog.all_tags", defaultI18nValues)}
+			items={allTags.map(tag => ({ name: tag, value: tag }))}
+			bind:value={tagFilter}
+			class="blog-tag-filter"
+		/>
 		<div class="blog-cards">
-			{#each posts.slice(1) as post}
+			{#each filteredPosts as post (post.slug)}
 				<BlogCard slug={post.slug} {...post.metadata} />
 			{/each}
 		</div>

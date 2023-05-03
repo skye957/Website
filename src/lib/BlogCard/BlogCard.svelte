@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { date as dateFormat } from "svelte-i18n";
 	import { externalLink } from "$lib";
 	import { InfoBadge } from "fluent-svelte";
+	import { date as dateFormat } from "svelte-i18n";
 
 	export let slug = "";
 	export let date = "";

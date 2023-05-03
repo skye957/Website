@@ -75,7 +75,8 @@
 			"tweet": "Twitter",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
-		}
+		},
+		"all_tags": "All Tags"
 	},
 	"docs": {
 		"autocomplete_empty": "No results found",
